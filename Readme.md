@@ -7,9 +7,10 @@ Python library [bleuio](https://pypi.org/project/bleuio/) >= 1.3.0
 
 ## Steps
 
-- Download the desired firmare from our [Manual page](https://www.bleuio.com/getting_started/docs/firmware/). It is recommended to place the firmware image file into the same folder as the script.
+- Download the desired firmware from our [Manual page](https://www.bleuio.com/getting_started/docs/firmware/). It is recommended to place the firmware image file into the same folder as the script.
 - Open a command prompt where the script is located.
 - Run: _python BleuIO_SUOTA_Updater.py image_file_name.img_
+- Start SUOTA Mode on the dongle you wish to update by running **AT+SUOTASTART** command.
 - The script will look for any BleuIO Dongle that is advertising in SUOTA mode and start updating the first it finds.
 - “**BleuIO Updated Successfully!**” message will be shown on the screen once the process is completed.
 - You will then be prompted "**Update another BleuIO Dongle? (y/n)**" if you choose **y** it will try to find and update another BleuIO Dongle. Choosing **n** will exit the script.
