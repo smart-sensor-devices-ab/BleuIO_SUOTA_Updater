@@ -19,8 +19,9 @@ from bleuio_lib.bleuio_funcs import BleuIO
 import binascii
 import os
 
-if os.name == 'nt':
-    print("Running on Windows")
+# Check if on Windows
+if os.name == "nt":
+    # Used to allow coloured text (ANSI escape sequences) in Windows Terminal
     kernel32 = ctypes.WinDLL("kernel32")
     hStdOut = kernel32.GetStdHandle(-11)
     mode = ctypes.c_ulong()
