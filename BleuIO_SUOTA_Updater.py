@@ -17,13 +17,16 @@ import json
 import argparse
 from bleuio_lib.bleuio_funcs import BleuIO
 import binascii
+import os
 
-kernel32 = ctypes.WinDLL("kernel32")
-hStdOut = kernel32.GetStdHandle(-11)
-mode = ctypes.c_ulong()
-kernel32.GetConsoleMode(hStdOut, ctypes.byref(mode))
-mode.value |= 4
-kernel32.SetConsoleMode(hStdOut, mode)
+if os.name == 'nt':
+    print("Running on Windows")
+    kernel32 = ctypes.WinDLL("kernel32")
+    hStdOut = kernel32.GetStdHandle(-11)
+    mode = ctypes.c_ulong()
+    kernel32.GetConsoleMode(hStdOut, ctypes.byref(mode))
+    mode.value |= 4
+    kernel32.SetConsoleMode(hStdOut, mode)
 
 # Firmware verison:
 fw_version = "1.0.0"

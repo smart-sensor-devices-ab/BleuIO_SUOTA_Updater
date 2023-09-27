@@ -17,12 +17,12 @@ Python library [bleuio](https://pypi.org/project/bleuio/) >= 1.3.0
 
 ## Arguments
 
-| Arguments     | Descriptions                                                                                                          |
-| :------------ | :-------------------------------------------------------------------------------------------------------------------- |
-| -h, --help    | Show this help message and exit                                                                                       |
-| -fw           | Requires SUOTA firmware img file to update BleuIO Dongle with.                                                        |
-| -dbg, --debug | Shows debug messages                                                                                                  |
-| -p, --port    | Choose port used by dongle used to update. If note choosen the first port found used by a BleuIO Dongle will be used. |
+| Arguments         | Descriptions                                                                                                          |
+| :---------------- | :-------------------------------------------------------------------------------------------------------------------- |
+| -h, --help        | Show this help message and exit                                                                                       |
+| -fw               | Requires SUOTA firmware img file to update BleuIO Dongle with.                                                        |
+| -dbg,<br> --debug | Shows debug messages                                                                                                  |
+| -p, --port        | Choose port used by dongle used to update. If note choosen the first port found used by a BleuIO Dongle will be used. |
 
 ## Example
 
