@@ -9,19 +9,19 @@ Python library [bleuio](https://pypi.org/project/bleuio/) >= 1.3.0
 
 - Download the desired firmare from our [Manual page](https://www.bleuio.com/getting_started/docs/firmware/). It is recommended to place the firmware image file into the same folder as the script.
 - Open a command prompt where the script is located.
-- Run: python BleuIO_SUOTA_Updater.py image_file_name.img
+- Run: _python BleuIO_SUOTA_Updater.py image_file_name.img_
 - The script will look for any BleuIO Dongle that is advertising in SUOTA mode and start updating the first it finds.
 - “**BleuIO Updated Successfully!**” message will be shown on the screen once the process is completed.
 - You will then be prompted "**Update another BleuIO Dongle? (y/n)**" if you choose **y** it will try to find and update another BleuIO Dongle. Choosing **n** will exit the script.
 
 ## Arguments
 
-|   Arguments   |                                                     Descriptions                                                      |
-| :-----------: | :-------------------------------------------------------------------------------------------------------------------: |
-|  -h, --help   |                                            Show this help message and exit                                            |
-|    -fw FW     |                            Requires SUOTA firmware img file to update BleuIO Dongle with.                             |
-| -dbg, --debug |                                                 Shows debug messages                                                  |
-|  -p, --port   | Choose port used by dongle used to update. If note choosen the first port found used by a BleuIO Dongle will be used. |
+| Arguments     | Descriptions                                                                                                          |
+| :------------ | :-------------------------------------------------------------------------------------------------------------------- |
+| -h, --help    | Show this help message and exit                                                                                       |
+| -fw           | Requires SUOTA firmware img file to update BleuIO Dongle with.                                                        |
+| -dbg, --debug | Shows debug messages                                                                                                  |
+| -p, --port    | Choose port used by dongle used to update. If note choosen the first port found used by a BleuIO Dongle will be used. |
 
 ## Example
 
@@ -464,7 +464,6 @@ Uploading : 99.2 %
 Uploading : 99.5 %
 Uploading : 99.7 %
 Uploading : 100.0 %
-Uploading : 100 %%
 Done!
 Upload complete.
 Update Successful: 02 SUOTA_STATUS_CMP_OK
