@@ -3,7 +3,7 @@
 ## Requirements
 
 Python >= 3.5<br>
-Python library [bleuio](https://pypi.org/project/bleuio/) >= 1.3.0
+Python library [bleuio](https://pypi.org/project/bleuio/) >= 1.3.1
 
 ## Steps
 
@@ -26,7 +26,7 @@ Python library [bleuio](https://pypi.org/project/bleuio/) >= 1.3.0
 
 ## Example
 
-```cmd
+```sh
 python BleuIO_SUOTA_Updater.py -fw bleuio.2.4.1-release.img -p COM6
 
 -BleuIO_SUOTA_SSD00X_Updater.py
